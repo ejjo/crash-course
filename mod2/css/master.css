@@ -6,6 +6,7 @@
 
 body {
     font-family: Georgia, serif;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
     font-size: 12pt;
     line-height: 16pt;
     padding: 1em;
@@ -18,20 +19,24 @@ h1,h2 {
 }
 h1 {
     font-size: 18pt;
+    color: darkgreen
 }
 h2 {
     float: right;
     font-size: 14pt;
     padding: 7pt;
     min-width: 40%;
-    border: 2pt solid black;
+    border: 2pt solid darkgreen;
     border-bottom-left-radius: 3px;
+    transition: .3s top ease-in-out, .2s right ease-out, .1s border ease-in-out;
+    position: relative;
+    top:0;
+    right:0;
 }
 
 section {
     color: white;
-    padding: .5em 1em;
-    border-radius: 3px;
+    padding: 1em;
     width: 90%;
     margin: auto;
 }
@@ -50,12 +55,28 @@ section:nth-child(4) h2 {
     color: navy
 }
 
+section:hover p {
+    color: bisque;
+    background-color: #b00;
+    background-color: bisque;
+    border-color: bisque;
+    border-color: #b00;
+    color: #900;
+}
+section:hover h2 {
+    border-color: bisque;
+    top: -5px;
+    right: -5px;
+}
+
 p {
 /*    margin: 1em;*/
-    border: 3px solid black;
-    background: gray;
-    padding: 4pt 8pt;
+    border-radius: 3px;
+    border: 3px solid darkgreen;
+    background-color: seagreen;
+    padding: 8pt;
     padding-top: 36pt;
+    letter-spacing: 0.12pt;
 }
 
 /* tablet */
